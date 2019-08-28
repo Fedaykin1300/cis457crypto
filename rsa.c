@@ -1,29 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <time.h>
-
-#define MAX_PRIME 1000
-#define MAX_SQRT 40
-#define MAX_PQ 10000
-
-//there are a lot of these
-typedef unsigned long long ULL;
-
-struct privateKey{
-	ULL n;
-	ULL d;
-};
-
-struct publicKey{
-	ULL n;
-	ULL e;
-};
-
-struct keyPair{
-	struct privateKey private;
-	struct publicKey public;
-};
+#include "rsa.h"
 
 /************************************
  * Finds Modular inverse

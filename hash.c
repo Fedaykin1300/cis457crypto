@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <openssl/md5.h>
-#include <stdlib.h>
+#include "hash.h"
 
 unsigned char* getHash(const char *str){
 	
